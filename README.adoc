@@ -1,1 +1,4 @@
 = TeslaCamViewer
+
+== License
+link:https://github.com/outsideris/TeslaCamViewer/blob/master/LICENSE[MIT]

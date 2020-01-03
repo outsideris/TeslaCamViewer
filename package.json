@@ -4,6 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "electron-webpack dev",
+    "lint": "eslint .",
+    "test": "mocha",
     "compile": "electron-webpack",
     "dist": "npm run compile && electron-builder",
     "dist:dir": "npm run dist --dir -c.compression=store -c.mac.identity=null"
@@ -12,9 +14,14 @@
     "source-map-support": "^0.5.12"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "electron": "7.1.7",
     "electron-builder": "^21.2.0",
     "electron-webpack": "^2.7.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "mocha": "^6.2.2",
     "webpack": "~4.41.5"
   }
 }
